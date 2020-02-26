@@ -1,27 +1,64 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    Hello! {{ text }}
+
+    <br>
+
+    <label>
+      <input type=file accept="image/*" capture=environment onchange="openQRCamera(this, 'send');" tabindex=-1>
+    </label>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// QR
+window.openQRCamera = function (node, type) {
+  var reader = new FileReader();
+  reader.onload = function() {
+    node.value = "";
+    qrcode.callback = function(res) {
+      if(res instanceof Error) {
+        alert("Asegúrese de que el código QR esté dentro del marco de la cámara e intente nuevamente.");
+      } else {
+        console.log('res: ', res)
+      }
+    };
+    qrcode.decode(reader.result);
+  };
+  reader.readAsDataURL(node.files[0]);
+}
+
+window.showQRIntro = function () {
+  return confirm("Tomar una foto al QR del cliente.");
+}
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data: () => {
+    return {
+      text: 'Vue.js'
+    }
+  },
+  mounted: () => {
+    console.log('scan ...')
+  },
+  methods: {
+    scan: function () {
+      console.log('scan ...')
+    }
   }
 }
 </script>
 
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  /* reset */
+  body
+    margin 0
+
+  /*video
+    height 100vh
+    width 100vw*/
+
 </style>
