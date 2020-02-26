@@ -21,27 +21,6 @@
 
 <script>
 
-// QR
-// window.openQRCamera = function (node, type) {
-//   var reader = new FileReader();
-//   reader.onload = function() {
-//     node.value = "";
-//     qrcode.callback = function(res) {
-//       if(res instanceof Error) {
-//         alert("Asegúrese de que el código QR esté dentro del marco de la cámara e intente nuevamente.");
-//       } else {
-//         console.log('res: ', res)
-//       }
-//     };
-//     qrcode.decode(reader.result);
-//   };
-//   reader.readAsDataURL(node.files[0]);
-// }
-
-// window.showQRIntro = function () {
-//   return confirm("Tomar una foto al QR del cliente.");
-// }
-
 export default {
   name: 'App',
   data: () => {
@@ -68,6 +47,7 @@ export default {
           } else {
             console.log('res: ', res)
             self.text = res
+            alert(":)" + self.text);
           }
         };
         qrcode.decode(reader.result);
