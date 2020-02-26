@@ -25,9 +25,9 @@
         <p>10 huevos AA</p>
 
         <p>Caja: 12 SKUs</p>
-        <p>Pallet: 120 Cajas</p> <br><br>
+        <p>Pallet: 120 Cajas</p> <br>
 
-        <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"> <br><br>
+        <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"> <br>
 
         <button>Ingresar en almacén</button>
       </section>
