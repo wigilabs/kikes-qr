@@ -21,15 +21,14 @@
         <img class="logo" src="https://lh3.googleusercontent.com/proxy/Lz76GvNGhMEq8ngBZAETByagoHiC8upboleTsYcuXzjzkjP_aT-w93BaOPRWXHSp_8_GzAXCua9xTHDp_IMj52y4jE8namQJnwAKeUEeZZmo7WGZSpQSLPXgVA">
       </header>
       <section>
-        <p>SKU: 123456789ABCD</p>
-        <p>10 huevos AA</p>
-
-        <p>Caja: 12 SKUs</p>
-        <p>Pallet: 120 Cajas</p> <br>
+        <p>SKU: 7707304621360</p>
+        <p>Descripción: Plus AA x 12 unid</p>
+        <p>Embalaje: Caja x 12</p>
+        <p>Pallet: 12 cajas (1728 unid)</p> <br>
 
         <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"> <br>
 
-        <button>Ingresar en almacén</button>
+        <button>Ingresar en inventario</button>
       </section>
     </section>
 
