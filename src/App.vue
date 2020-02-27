@@ -57,7 +57,11 @@ export default {
       reader.onload = function() {
         qrcode.callback = function(res) {
           if(res instanceof Error) {
-            alert("Asegúrese de que el código QR esté dentro del marco de la cámara e intente nuevamente.")
+            // alert("Asegúrese de que el código QR esté dentro del marco de la cámara e intente nuevamente.")
+
+            self.value = res
+            self.page = 'details'
+
           } else {
             // console.log('res: ', res)
             self.value = res
