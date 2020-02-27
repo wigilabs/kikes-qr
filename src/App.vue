@@ -28,7 +28,7 @@
 
         <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"> <br>
 
-        <button>Ingresar en inventario</button>
+        <button>Ingresar a inventario</button>
       </section>
     </section>
 
