@@ -23,7 +23,8 @@
       <section>
         <p>SKU: <span>7707304621360</span></p>
         <p>Descripción: <span>Plus AA x 12 unid</span></p>
-        <p>Embalaje: <span>Caja x 12 (7707304621360A)</span></p>
+        <p>Embalaje: <span>7707304621360A</span></p>
+        <p>Descripción: <span>Caja x 12</span></p>
         <p>Pallet: <span>12 cajas (1728 unid)</span></p> <br>
 
         <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"> <br>
